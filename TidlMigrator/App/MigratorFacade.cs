@@ -30,6 +30,8 @@ namespace TidlMigrator.App
             await migrationExecutor.Migrate(new FavoriteAlbums());
             await migrationExecutor.Migrate(new FavoritePlaylists());
             await migrationExecutor.Migrate(new UserPlaylists());
+
+            Console.WriteLine("Done migrating everything!");
         }
     }
 }
